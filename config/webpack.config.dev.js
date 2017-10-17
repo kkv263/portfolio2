@@ -153,7 +153,6 @@ module.exports = {
               // directory for faster rebuilds.
               cacheDirectory: true,
             },
-            plugins: ['react-hot-loader/babel'],
           },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
