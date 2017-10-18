@@ -10,10 +10,10 @@ registerServiceWorker();
 
 if (module.hot) {
   module.hot.accept('./App', () => {
-      const App = require('./App').default; // eslint-disable-line global-require
+      const nApp = require('./App').default; // eslint-disable-line global-require
       ReactDOM.render(
           <AppContainer>
-              <App />
+              <nApp />
           </AppContainer>,
           document.getElementById('root')
       );
