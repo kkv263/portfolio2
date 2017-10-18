@@ -8,3 +8,10 @@
   background: transparent;
   font-family: sans-serif;
 }
+::-moz-selection { /* Code for Firefox */
+  background: #FFF9A5;
+}
+
+::selection {
+  background: #FFF9A5;
+}

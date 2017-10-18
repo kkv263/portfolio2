@@ -1,37 +1,20 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
-const Paragraph = styled.p`
-font-size: 1.1em;
-color: #EAF2E3;
-font-family: 'Inconsolata', monospace;
-`;
-
-const Wrapper = styled.div`
-background-color: #AFC2D5;
-width: 50%;
-height: 100vh;
-`
-
-const TextWrapper = styled.div`
-padding-top:30px;
-padding-left:30px;
-`
+import { Paragraph, TextWrapper, Wrapper } from '../styles/Home.style';
 
 class HomeContainer extends Component {
   render() {
     return (
       <Wrapper>
         <TextWrapper>
-        <Paragraph>Contact Me</Paragraph>
+        <Paragraph >Contact Me</Paragraph>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <Paragraph>Email: kkv263@utexas.edu</Paragraph>
-        <Paragraph>Phone: 512. 698. 3981</Paragraph>
+        <Paragraph>Email: <a href="mailto:kkv263@utexas.edu">kkv263@utexas.edu</a></Paragraph>
+        <Paragraph>Phone: <span>512. 698. 3981</span></Paragraph>
         <p>&nbsp;</p>
-        <Paragraph>LinkedIn</Paragraph>
-        <Paragraph>GitHub</Paragraph>
-        <Paragraph>Resume</Paragraph> 
+        <Paragraph><a href="https://www.linkedin.com/in/kkv263/" target="_blank">LinkedIn</a></Paragraph> 
+        <Paragraph><a href="https://github.com/kkv263" target="_blank">GitHub</a></Paragraph> 
+        <Paragraph><a href="#" target="_blank">Resume</a></Paragraph> 
         </TextWrapper>
       </Wrapper>
     );
