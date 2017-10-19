@@ -5,6 +5,10 @@ const NavItem = styled.h1`
 font-size: 1.25em;
 color: #EAF2E3;
 font-family: 'Inconsolata', monospace;
+transition: color ease .25s;
+&:hover {
+		color: #F25757;
+	}
 `
 
 const Wrapper = styled.div`

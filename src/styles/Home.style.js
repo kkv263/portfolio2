@@ -4,7 +4,7 @@ export const Paragraph = styled.p`
 font-size: 1.1em;
 color: #EAF2E3;
 font-family: 'Inconsolata', monospace;
-padding-top:5px;
+padding-top: ${props => props.size || '5px'};
 > a, span {
 transition: color ease .25s;
 text-decoration: none !important;
@@ -22,7 +22,7 @@ background-color: #AFC2D5;
 width: 50%;
 height: 100vh;
 float:left;
-`
+`;
 
 export const TextWrapper = styled.div`
 padding-top:30px;
@@ -30,7 +30,7 @@ padding-left:30px;
 
 display: inline-block;
 vertical-align: middle;
-`
+`;
 
 export const rotate360 = keyframes`
 	from {-webkit-transform:translate(0, 0px);}
@@ -40,7 +40,7 @@ export const rotate360 = keyframes`
 
 export const Brand = styled.h1`
 position:absolute;
-bottom:0;
+bottom:30px;
 font-family: 'Varela Round', sans-serif;
 font-size: 4em;
 color: #EAF2E3;
@@ -48,6 +48,8 @@ padding-left:30px;
 transition: color ease .25s;
 text-decoration: none !important;
   > div {
+		
+		transition: background-color ease .25s;
 		animation: ${rotate360} 3s ease-in-out infinite;
 		display:inline-block;
 		width: 10px;
@@ -58,7 +60,10 @@ text-decoration: none !important;
 		border-radius: 50px;
 		
 	}
+&:hover > div{
+		background-color: #F25757;
+	}
 &:hover {
 		color: #F25757;
-	}
+}
 `
