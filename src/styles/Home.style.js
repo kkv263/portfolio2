@@ -4,6 +4,7 @@ export const Paragraph = styled.p`
 font-size: 1.1em;
 color: #EAF2E3;
 font-family: 'Inconsolata', monospace;
+padding-top:5px;
 > a, span {
 transition: color ease .25s;
 text-decoration: none !important;
