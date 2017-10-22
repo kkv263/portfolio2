@@ -9,42 +9,28 @@ transition: color ease .25s;
 padding-top:20px;
 text-align: right;
 width: 20px;
+cursor:pointer;
+
 &:hover {
 		color: #F25757;
 	}
 `
 
-const Accordian = styled.div`
-transition: border-color ease .25s;
-position: absolute;
-top:30px;
-right: 30px;
-width: 40px;
-height: 30px;
-border: 3px solid #EAF2E3;
-border-radius: 10px;
-cursor: pointer;
-  &:hover {
-    border-color: #F25757;
-  }
-  &:hover > div {
-    border-color: #F25757;
-  }
-`
-
-const AccordLines = styled.div`
-transition: border-color ease .25s;
-margin-top: 6px;
-border-bottom: 1.5px solid #EAF2E3;
-width: 70%;
-margin-right: auto;
-margin-left: auto;
+const NavWrapper = styled.div`
+margin-right: 10%;
+display:flex;
+justify-content: space-around;
 `
 
 class NavigationBar extends Component {
   render() {
     return (
-      <div></div>
+      <NavWrapper>
+        <NavItem onClick={this.props.showHome}>Home</NavItem>
+        <NavItem onClick={this.props.showAbout}>About</NavItem>
+        <NavItem >Projects</NavItem>
+        <NavItem>Contact</NavItem>
+      </NavWrapper>
     );
   }
 }

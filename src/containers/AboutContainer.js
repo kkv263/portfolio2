@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { Wrapper, Image, Paragraph } from '../styles/About.style';
-
+import NavigationBar from '../components/NavigationBar';
 class AboutContainer extends Component {
   
   render() {
     return (
       <Wrapper>
+        <NavigationBar showAbout={this.props.showAbout}
+                       showHome ={this.props.showHome}>
+        </NavigationBar>
         <Image src="https://dummyimage.com/600x400/6e6e6e/5e5e5e.png&text=PlaceHolder"></Image>
         <Paragraph>
           TLDR; Kevin Vu is a aspiring web developer who is currently a student at the University of
