@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Paragraph = styled.p`
-font-size: 1.1em;
+font-size: 1.2em;
 color: #EAF2E3;
 font-family: 'Inconsolata', monospace;
 padding-top: ${props => props.size || '5px'};
