@@ -7,9 +7,9 @@ height: 100vh;
 float: right;
 `
 export const float = keyframes`
-	from {-webkit-transform:translate(0, 0px);}
-  65% {-webkit-transform:translate(0, -5px);}
-  to {-webkit-transform:translate(0, -0px);  
+	from {transform:translate(0, 0px);}
+  65% {transform:translate(0, -5px);}
+  to {transform:translate(0, -0px);  
 `;
 
 export const fadeIn = keyframes`
@@ -33,29 +33,28 @@ bottom 0px;
 text-align:center;
 `
 
-export const DownArrow = styled.div`
+export const DownArrow = styled.img`
 display:inline-block;
-border-right: 6px solid #EAF2E3;
-border-top: 6px solid #EAF2E3;
-border-radius: 6px;
-width: 30px;
-height: 30px;
+width:50px;
+height:50px;
 margin-right: 15%;
-position:relative;
 animation: ${float} 2s ease-in-out infinite;
-opacity:0.2;
+opacity:0.3;
 transition: opacity ease .25s;
 cursor:pointer;
+transform: rotate(135deg);
 
-  > p {
-    font-size: 1.1em;
-    color: #EAF2E3;
-    font-family: 'Inconsolata', monospace;
-    top:25px;
-    right:5px;
-    position:absolute;
-  }
   &:hover {
-    opacity:0.5;
+    opacity:1;
   }
+`
+
+export const ArrowText = styled.p`
+font-size: 1.1em;
+color: #EAF2E3;
+opacity:0.3;
+font-family: 'Inconsolata', monospace;
+bottom:55px;
+right:53%;
+position:absolute;
 `

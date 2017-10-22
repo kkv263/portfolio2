@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavigationBar from '../components/NavigationBar'
-import { Paragraph, Wrapper, DownArrow, ArrowWrapper } from '../styles/Welcome.style';
+import { Paragraph, Wrapper, DownArrow, ArrowWrapper, ArrowText } from '../styles/Welcome.style';
 import AboutContainer from './AboutContainer';
 
 class WelcomeContainer extends Component {
@@ -29,7 +29,9 @@ class WelcomeContainer extends Component {
         <Paragraph time="1s">My name is Kevin and you have landed on my portfolio page!</Paragraph>
         <Paragraph time="1.5s">Feel free to look around and enjoy your stay!</Paragraph>
         <ArrowWrapper>
-        <DownArrow onClick={this.showAboutPage}><p>Explore</p></DownArrow>
+          <ArrowText>Explore</ArrowText>
+        <DownArrow src={require('../assets/chevron.png')} onClick={this.showAboutPage}>
+        </DownArrow>
         </ArrowWrapper>
       </Wrapper> 
     );
