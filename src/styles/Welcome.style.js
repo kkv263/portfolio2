@@ -45,7 +45,7 @@ transform: rotate(135deg);
 
 export const ArrowText = styled.p`
 font-size: 1.1em;
-color: #EAF2E3;
+color: #E1EFE6;
 opacity:0.3;
 font-family: 'Inconsolata', monospace;
 bottom:55px;

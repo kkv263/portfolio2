@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const NavItem = styled.h2`
 font-size: 1em;
-color: #EAF2E3;
+color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 transition: color ease .25s;
 padding-top:20px;
@@ -12,7 +12,7 @@ width: 20px;
 cursor:pointer;
 
 &:hover {
-		color: #F25757;
+		color: #EFCB68;
 	}
 `
 

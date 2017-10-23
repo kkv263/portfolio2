@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Paragraph = styled.p`
 font-size: 1.2em;
-color: #EAF2E3;
+color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 padding-top: ${props => props.size || '5px'};
 > a, span {
@@ -11,14 +11,14 @@ text-decoration: none !important;
 font-family: inherit;
 color: inherit;
   &:hover {
-		color: #F25757;
+		color: #EFCB68;
 	}
 }
 `;
 
 export const Wrapper = styled.div`
 position: relative;
-background-color: #AFC2D5;
+background-color: #222823;
 width: 45%;
 height: 100vh;
 float:left;
@@ -36,7 +36,7 @@ position:absolute;
 bottom:30px;
 font-family: 'Varela Round', sans-serif;
 font-size: 4em;
-color: #EAF2E3;
+color: #E1EFE6;
 padding-left:30px;
 transition: color ease .25s;
 text-decoration: none !important;
@@ -52,9 +52,9 @@ text-decoration: none !important;
 		
 	}
 &:hover > div {
-		background-color: #F25757;
+		background-color: #EFCB68;
 	}
 &:hover {
-		color: #F25757;
+		color: #EFCB68;
 }
 `

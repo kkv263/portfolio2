@@ -11,6 +11,6 @@ margin-left: 10%;
 export const Paragraph = styled.p`
 margin-bottom: 30px;
 font-size: 1.2em;
-color: #EAF2E3;
+color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 `

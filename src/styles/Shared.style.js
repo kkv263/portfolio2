@@ -16,7 +16,7 @@ animation: ${fadeIn} 1s ease;
 `
 
 export const Wrapper = styled.div`
-background-color: #AFC2D5;
+background-color: #222823;
 width: 55%;
 height: 100vh;
 float: right;
