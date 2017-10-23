@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Wrapper, FadeInWrapper} from '../styles/Shared.style'
+import { Paragraph, Paragraph2 } from '../styles/Contact.style';
 import NavigationBar from '../components/NavigationBar';
 class ContactContainer extends Component {
   render() {
@@ -10,7 +11,8 @@ class ContactContainer extends Component {
                        showProjects={this.props.showProjects}>
                        </NavigationBar>
         <FadeInWrapper>
-          <h1>Hello World!</h1>
+          <Paragraph>Have a question?</Paragraph>
+          <Paragraph2>Shoot me an email at: kkv263@utexas.edu</Paragraph2>
         </FadeInWrapper>
       </Wrapper>        
     );
