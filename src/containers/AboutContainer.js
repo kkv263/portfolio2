@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import { Wrapper, Image, Paragraph } from '../styles/About.style';
+import { Image, Paragraph } from '../styles/About.style';
 import NavigationBar from '../components/NavigationBar';
+import { Wrapper, ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
 class AboutContainer extends Component {
   
   render() {
     return (
       <Wrapper>
-        <NavigationBar showAbout={this.props.showAbout}
-                       showHome ={this.props.showHome}>
+        <NavigationBar 
+                       showHome ={this.props.showHome}
+                       showProjects={this.props.showProjects}
+                       showContact={this.props.showContact}
+                       >
+
+
         </NavigationBar>
+        <FadeInWrapper>
         <Image src="https://dummyimage.com/600x400/6e6e6e/5e5e5e.png&text=PlaceHolder"></Image>
         <Paragraph>
           TLDR; Kevin Vu is a aspiring web developer who is currently a student at the University of
@@ -40,7 +47,13 @@ class AboutContainer extends Component {
           That's basically a gist of who I am, if you want to get to know me better feel free to shoot 
           me an email with anything you want!
         </Paragraph>
+        <ArrowWrapper>
+          <DownArrow src={require('../assets/chevron.png')} onClick = {this.props.showProjects}/>
+
+        </ArrowWrapper>
+        </FadeInWrapper>
       </Wrapper>
+
     );
   } 
 }

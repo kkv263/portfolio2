@@ -28,8 +28,8 @@ class NavigationBar extends Component {
       <NavWrapper>
         <NavItem onClick={this.props.showHome}>Home</NavItem>
         <NavItem onClick={this.props.showAbout}>About</NavItem>
-        <NavItem >Projects</NavItem>
-        <NavItem>Contact</NavItem>
+        <NavItem onClick={this.props.showProjects}>Projects</NavItem>
+        <NavItem onClick={this.props.showContact}>Contact</NavItem>
       </NavWrapper>
     );
   }

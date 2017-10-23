@@ -1,11 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-export const Wrapper = styled.div`
-background-color: #AFC2D5;
-width: 55%;
-height: 100vh;
-float: right;
-`
 export const float = keyframes`
 	from {transform:translate(0, 0px);}
   65% {transform:translate(0, -5px);}
@@ -55,6 +49,6 @@ color: #EAF2E3;
 opacity:0.3;
 font-family: 'Inconsolata', monospace;
 bottom:55px;
-right:53%;
+right:49.5%;
 position:absolute;
 `
