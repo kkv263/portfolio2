@@ -14,3 +14,8 @@ font-size: 1.2em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 `
+
+export const TextWrapper = styled.div`
+margin-left: 5%;
+margin-right: 5%;
+`
