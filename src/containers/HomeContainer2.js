@@ -18,6 +18,8 @@ class HomeContainer2 extends Component {
  }
 
   render() {
+    // Switch statement to allow for re-render when navbar is clicked.
+    // Pass through showPage as props => callback function 
     switch (this.state.showPage){
       case "about":
         return (<AboutContainer 

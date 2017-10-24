@@ -13,13 +13,13 @@ class ContactContainer extends Component {
         <FadeInWrapper>
           <Paragraph>Have a question?</Paragraph>
           <Paragraph2>Shoot me an email at <a href="mailto:kkv263@utexas.edu">kkv263@utexas.edu</a></Paragraph2>
-          <p>&nbsp;</p>
+          <br />
 
           <Quote>
           Inspiring quotes from me to you:
-          <p>&nbsp;</p>
+          <br />
           “Be the person you needed when you were younger.”
-          <p>&nbsp;</p>
+          <br />
           - Ayesha Siddiqi 
           </Quote>
         </FadeInWrapper>
