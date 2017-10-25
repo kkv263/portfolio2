@@ -14,7 +14,6 @@ class ContactContainer extends Component {
           <Paragraph>Have a question?</Paragraph>
           <Paragraph2>Shoot me an email at <a href="mailto:kkv263@utexas.edu">kkv263@utexas.edu</a></Paragraph2>
           <br />
-
           <Quote>
           Inspiring quotes from me to you:
           <br />

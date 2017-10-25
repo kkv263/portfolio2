@@ -25,7 +25,7 @@ overflow:auto;
 
 export const ArrowWrapper = styled.div`
 width: 100%;
-height:30px;
+height:10px;
 padding-bottom:${props=>props.pos};
 position:relative;
 `

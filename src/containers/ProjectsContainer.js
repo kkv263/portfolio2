@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import NavigationBar from '../components/NavigationBar';
 import { Wrapper, ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
-import { Star, StarWrapper, ProjectStar, SummaryWrapper, 
-         Summary, TextWrapper1, TextWrapper2, ProjectText, ResourceText } from '../styles/Projects.style';
+import { Star, StarWrapper, ProjectStar, SummaryWrapper, FadeInWrapper2, 
+         Summary, TextWrapper1, TextWrapper2, ProjectText, ResourceText,
+         FadeInWrapper3, FadeInWrapper4 } from '../styles/Projects.style';
 
 class ProjectsContainer extends Component {
   constructor(props){
@@ -14,9 +15,12 @@ class ProjectsContainer extends Component {
     this.showProject = this.showProject.bind(this);
   }  
 
-  showProject(value){
+  showProject(value,){
     this.setState({ showProject : value} );
-    console.log(value);
+    setTimeout(function() { this.setState({position: 1}); }.bind(this), 3000);
+    if (value === "1"){
+
+    }
   }
 
   componentDidMount(){
@@ -40,8 +44,14 @@ class ProjectsContainer extends Component {
     });
   }
 
+  // shouldComponentUpdate(nextState, nextProps) {
+  //   return nextState !== this.state.showProject;
+  // }
+
   render() {  
 
+    
+    console.log("hi");
     var stars = this.state.showStars;
     stars = stars.map(function(item,index){
       return (
@@ -54,7 +64,6 @@ class ProjectsContainer extends Component {
     });
 
     var projectRender = ""; 
-    console.log(projectRender);
 
     // Switch statement to render project description on click of star.
     switch (this.state.showProject){
@@ -68,7 +77,7 @@ class ProjectsContainer extends Component {
         break;
       case "1":
         projectRender = (
-          <div>
+          <FadeInWrapper>
             <TextWrapper1>
               <ResourceText>
                  Tools: Android Studio, Java, XML<br /><br />
@@ -82,12 +91,12 @@ class ProjectsContainer extends Component {
                 daily macronutrients and a daily amount of calories for the user to utilize.
               </ProjectText>
             </TextWrapper2>
-          </div>
+          </FadeInWrapper>
           );
         break;
       case "2":
         projectRender = (
-          <div>
+          <FadeInWrapper2>
             <TextWrapper1>
             <ResourceText>
                  Tools: Python, Reddit PRAW, Keepa API, Amazon API<br /><br />
@@ -101,12 +110,12 @@ class ProjectsContainer extends Component {
                 listed and show a graph representing the price history of the product.
               </ProjectText>
             </TextWrapper2>
-          </div>
+          </FadeInWrapper2>
           );
         break;
       case "3":
         projectRender = (
-          <div>
+          <FadeInWrapper3>
             <TextWrapper1>
             <ResourceText>
                  Tools: React, ES6<br /><br />
@@ -121,12 +130,12 @@ class ProjectsContainer extends Component {
                 experience, and gives users a platform to contact me.
               </ProjectText>
             </TextWrapper2>
-          </div>
+          </FadeInWrapper3>
           );
         break;
         case "4":
         projectRender = (
-          <div>
+          <FadeInWrapper4>
             <TextWrapper1>
             <ResourceText>
                  Tools: React, Flask, SQLAlchemy, Bootstrap, Python <br /><br/>
@@ -140,7 +149,7 @@ class ProjectsContainer extends Component {
                 mainly the frontend of the project and contributed to some of the backend for the project.
               </ProjectText>
             </TextWrapper2>
-          </div>
+          </FadeInWrapper4>
           );
         break;
       default:
@@ -164,7 +173,7 @@ class ProjectsContainer extends Component {
           <SummaryWrapper>
             {projectRender}
           </SummaryWrapper>
-          <ArrowWrapper pos="5%">
+          <ArrowWrapper pos="8%">
             <DownArrow src={require('../assets/chevron.png')} onClick = {this.props.showContact}/>
           </ArrowWrapper>
         </FadeInWrapper>

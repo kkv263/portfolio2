@@ -11,6 +11,16 @@ export const fadeIn = keyframes`
 100%  { opacity: 1;}
 `
 
+export const FadeInWrapper2 = styled.div`
+animation: ${fadeIn} 1s ease;
+`
+export const FadeInWrapper3 = styled.div`
+animation: ${fadeIn} 1s ease;
+`
+export const FadeInWrapper4 = styled.div`
+animation: ${fadeIn} 1s ease;
+`
+
 export const scale = keyframes`
 from {transform: scale(1.0);}
 to {transform: scale(1.3);}   
@@ -81,7 +91,6 @@ position: relative;
 `
 
 export const TextWrapper1 = styled.div`
-animation: ${fadeIn} 1s ease;
 padding-top: 2.5%;
 height:40vh;
 float:left;
@@ -90,7 +99,6 @@ position:relative;
 `
 
 export const TextWrapper2 = styled.div`
-animation: ${fadeIn} 1s ease;
 display:table;
 padding-top: 2.5%;
 height:40vh;
@@ -111,6 +119,8 @@ color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 position: absolute;
 bottom: 0%;
+z-index:1;
+
 > a {
   transition: color ease .25s;
   text-decoration: none !important;
