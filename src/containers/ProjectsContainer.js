@@ -15,12 +15,8 @@ class ProjectsContainer extends Component {
     this.showProject = this.showProject.bind(this);
   }  
 
-  showProject(value,){
+  showProject(value){
     this.setState({ showProject : value} );
-    setTimeout(function() { this.setState({position: 1}); }.bind(this), 3000);
-    if (value === "1"){
-
-    }
   }
 
   componentDidMount(){
@@ -51,7 +47,6 @@ class ProjectsContainer extends Component {
   render() {  
 
     
-    console.log("hi");
     var stars = this.state.showStars;
     stars = stars.map(function(item,index){
       return (
@@ -174,7 +169,7 @@ class ProjectsContainer extends Component {
             {projectRender}
           </SummaryWrapper>
           <ArrowWrapper pos="8%">
-            <DownArrow src={require('../assets/chevron.png')} onClick = {this.props.showContact}/>
+            <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showContact}/>
           </ArrowWrapper>
         </FadeInWrapper>
       </Wrapper>

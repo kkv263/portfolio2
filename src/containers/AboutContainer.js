@@ -48,9 +48,9 @@ class AboutContainer extends Component {
           That's basically a gist of who I am, if you want to get to know me better feel free to shoot 
           me an email with anything you want!
         </Paragraph>
-        </TextWrapper>``
-        <ArrowWrapper>
-          <DownArrow src={require('../assets/chevron.png')} onClick = {this.props.showProjects}/>
+        </TextWrapper>
+        <ArrowWrapper pos="4%">
+          <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showProjects}/>
 
         </ArrowWrapper>
         </FadeInWrapper>

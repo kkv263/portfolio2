@@ -25,17 +25,17 @@ overflow:auto;
 
 export const ArrowWrapper = styled.div`
 width: 100%;
-height:10px;
+height: 10px;
 padding-bottom:${props=>props.pos};
 position:relative;
 `
 
 export const DownArrow = styled.img`
 position:absolute;
-right:50%;
-bottom:0px;
-width:50px;
-height:50px;
+right:46%;
+bottom:-10px;
+width:100px;
+height:100px;
 animation: ${float} 2s ease-in-out infinite;
 opacity:0.3;
 transition: opacity ease .25s;
