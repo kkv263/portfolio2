@@ -41,7 +41,6 @@ opacity:0.3;
 transition: opacity ease .25s;
 cursor:pointer;
 transform: rotate(135deg);
-
   &:hover {
     opacity:1;
   }

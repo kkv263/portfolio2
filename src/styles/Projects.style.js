@@ -39,19 +39,18 @@ animation-delay: ${props => props.delay};
 box-shadow: 0px 0px 5px #fff;
 `
 
-export const ProjectStar = styled.div`
-background-color: #EFCB68;
+export const ProjectStar = styled.img`
 position: absolute;
 top: ${props => props.top};
 left:${props => props.left};
-height: 50px;
-width: 50px;
-border-radius:50%;
-transition: transform 1s ease;
+height: ${props => props.h};
+width: ${props => props.w};
+transition: all 1s ease;
+opacity:  ${props => props.full ? '1' : '0.3'};;;
 cursor:pointer;
   &:hover {
-    transform: scale(1.3);
-
+    transform: scale(1.1);
+    opacity:1
   }
 `
 

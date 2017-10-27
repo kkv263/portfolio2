@@ -66,7 +66,7 @@ class ProjectsContainer extends Component {
         projectRender = (
           <div>
             <Summary>Take a look at my projects!</Summary>
-            <Summary>Click a star to find out more - </Summary>
+            <Summary>Click a constellation to find out more - </Summary>
           </div>
         );
         break;
@@ -74,6 +74,8 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper>
             <TextWrapper1>
+              <ProjectText>Pegasus:</ProjectText>
+              <ProjectStar full src={require('../assets/pegasus.svg')} h="150px" w="150px" top="15%" left="10%"/>
               <ResourceText>
                  Tools: Android Studio, Java, XML<br /><br />
                  <a href="https://github.com/kkv263/MacroCalculator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -93,6 +95,8 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper2>
             <TextWrapper1>
+            <ProjectText>Big Dipper:</ProjectText>
+            <ProjectStar full src={require('../assets/bigdipper.svg')} h="200px" w="200px" top="6%" left="7%"/>
             <ResourceText>
                  Tools: Python, Reddit PRAW, Keepa API, Amazon API<br /><br />
                  <a href="https://github.com/kkv263/redditBots/tree/master/figuresBot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -112,6 +116,8 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper3>
             <TextWrapper1>
+            <ProjectText>Leo:</ProjectText>
+            <ProjectStar full src={require('../assets/leo.svg')} h="150px" w="150px" top="10%" left="15%"/>
             <ResourceText>
                  Tools: React, ES6<br /><br />
                  <a href="https://github.com/kkv263/portfolio2" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -132,6 +138,8 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper4>
             <TextWrapper1>
+            <ProjectText>Canis-Major:</ProjectText>
+            <ProjectStar full src={require('../assets/canismajor.svg')} h="125px" w="125px" top="10%" left="20%"/>
             <ResourceText>
                  Tools: React, Flask, SQLAlchemy, Bootstrap, Python <br /><br/>
                  <a href="https://github.com/savsmith/idb" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -160,10 +168,14 @@ class ProjectsContainer extends Component {
         <FadeInWrapper>
           <StarWrapper>
             {stars}
-            <ProjectStar onClick={() => this.showProject("1")} top="40%" left="12.5%"></ProjectStar>
-            <ProjectStar onClick={() => this.showProject("2")} top="40%" left="37.5%"></ProjectStar>
-            <ProjectStar onClick={() => this.showProject("3")} top="40%" left="62.5%"></ProjectStar>
-            <ProjectStar onClick={() => this.showProject("4")} top="40%" left="87.5%"></ProjectStar>
+            <ProjectStar onClick={() => this.showProject("3")} src={require('../assets/leo.svg')} 
+            top="20%" left="10%" h="100px" w="100px"/>
+            <ProjectStar onClick={() => this.showProject("2")} src={require('../assets/bigdipper.svg')} 
+            top="35%" left="30%" h="170px" w="170px"/>
+            <ProjectStar onClick={() => this.showProject("1")} src={require('../assets/pegasus.svg')}
+            top="50%" left="80%" h="100px" w="100px"/>
+            <ProjectStar onClick={() => this.showProject("4")} src={require('../assets/canismajor.svg')}
+            top="20%" left="60%" h="100px" w="100px"/> 
           </StarWrapper>
           <SummaryWrapper>
             {projectRender}
