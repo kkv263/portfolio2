@@ -15,8 +15,6 @@ class HomeContainer extends Component {
         <Paragraph><a href="https://www.linkedin.com/in/kkv263/" target="_blank" rel="noopener noreferrer">LinkedIn</a></Paragraph> 
         <Paragraph><a href="https://github.com/kkv263" target="_blank" rel="noopener noreferrer">GitHub</a></Paragraph> 
         <Paragraph><a href="#resume" target="_blank" rel="noopener noreferrer">Resume</a></Paragraph> 
-        <Paragraph size="315px"><span>I am a</span></Paragraph>
-        <Paragraph ><span>Aspiring Developer</span></Paragraph>
         </TextWrapper>
           <Brand>K E V I N <div></div> V U</Brand> 
       </Wrapper>

@@ -31,7 +31,7 @@ display: inline-block;
 vertical-align: middle;
 `;
 
-export const Brand = styled.h1`
+export const Brand = styled.div`
 position:absolute;
 bottom:30px;
 font-family: 'Varela Round', sans-serif;
