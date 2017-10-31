@@ -21,6 +21,7 @@ width: 55%;
 height: 100vh;
 float: right;
 overflow: ${props => props.of};
+-webkit-overflow-scrolling: touch;
 @media all and (max-width: 768px) {
 		width:100%;
 	}

@@ -23,7 +23,7 @@ class HomeContainer2 extends Component {
     // Pass through showPage as props => callback function 
     switch (this.state.showPage){
       case "about":
-        return ( <Wrapper of="auto">
+        return ( <Wrapper of="scroll">
         <AboutContainer 
         showHome ={() => this.showPage("home")}
         showProjects={() => this.showPage("projects")}

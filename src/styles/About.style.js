@@ -6,6 +6,9 @@ width: 80%;
 height 50vh;
 display: block;
 margin: 0 auto;
+@media all and (max-width: 415px) {
+		height:35vh;
+	}
 `
 export const Paragraph = styled.p`
 margin-bottom: 30px;

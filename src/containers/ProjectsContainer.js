@@ -139,7 +139,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper4>
             <TextWrapper1>
             <ProjectText>Canis-Major:</ProjectText>
-            <ProjectStar full src={require('../assets/canismajor.svg')} h="60%" w="60%" top="0%" left="20%"/>
+            <ProjectStar full src={require('../assets/canismajor.svg')} h="50%" w="50%" top="8%" left="25%"/>
             <ResourceText>
                  Tools: React, Flask, SQLAlchemy, Bootstrap, Python <br /><br/>
                  <a href="https://github.com/savsmith/idb" target="_blank" rel="noopener noreferrer">View on GitHub</a>
