@@ -43,9 +43,10 @@ display: inline-block;
 `;
 
 export const BrandWrapper = styled.div`
-margin-left:30px;
+position:absolute;
+left:30px;
+bottom:30px;
 border: 10px solid #E1EFE6;
-margin-top: 300px;
 width: 220px;
 height: 120px;
 transition: all ease .25s;
@@ -59,6 +60,7 @@ transition: all ease .25s;
 	transition: all ease .25s;
 }
 @media all and (max-width: 768px) {
+	position: static;
 	margin: 0 auto;
 	margin-top: 50px;
 }
