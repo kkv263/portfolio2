@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Paragraph, TextWrapper, Wrapper, Brand } from '../styles/Home.style';
+import { Paragraph, TextWrapper, Wrapper, Brand, BrandWrapper } from '../styles/Home.style';
 
 class HomeContainer extends Component {
   render() {
@@ -16,7 +16,11 @@ class HomeContainer extends Component {
         <Paragraph><a href="https://github.com/kkv263" target="_blank" rel="noopener noreferrer">GitHub</a></Paragraph> 
         <Paragraph><a href="#resume" target="_blank" rel="noopener noreferrer">Resume</a></Paragraph> 
         </TextWrapper>
-          <Brand>K E V I N <div></div> V U</Brand> 
+        <BrandWrapper>
+        
+        <Brand bottom="30px">K E V I N</Brand>
+        <Brand bottom="100px">V U </Brand> 
+        </BrandWrapper>
       </Wrapper>
       </div>
     );

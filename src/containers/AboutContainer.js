@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Image, Paragraph, TextWrapper } from '../styles/About.style';
 import NavigationBar from '../components/NavigationBar';
-import { Wrapper, ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
+import {ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
 class AboutContainer extends Component {
   
   render() {
     return (
-      <Wrapper>
+      <div>
         <NavigationBar 
                        showHome ={this.props.showHome}
                        showProjects={this.props.showProjects}
@@ -49,12 +49,12 @@ class AboutContainer extends Component {
           me an email with anything you want!
         </Paragraph>
         </TextWrapper>
-        <ArrowWrapper pos="4%">
+        <ArrowWrapper pos="8%">
           <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showProjects}/>
 
         </ArrowWrapper>
         </FadeInWrapper>
-      </Wrapper>
+      </div>
 
     );
   } 

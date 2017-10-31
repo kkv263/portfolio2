@@ -46,7 +46,7 @@ left:${props => props.left};
 height: ${props => props.h};
 width: ${props => props.w};
 transition: all 1s ease;
-opacity:  ${props => props.full ? '1' : '0.3'};;;
+opacity:  ${props => props.full ? '1' : '0.3'};
 cursor:pointer;
   &:hover {
     transform: scale(1.1);
@@ -57,7 +57,7 @@ cursor:pointer;
 export const Summary = styled.p`
 text-align:center;
 margin-top: 5%;
-font-size: 1.2em;
+font-size: 1.1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 `
@@ -65,7 +65,8 @@ font-family: 'Inconsolata', monospace;
 export const SummaryWrapper = styled.div`
 border-color: #E1EFE6;
 height:40vh;
-margin-right:10%;
+margin-right:5%;
+margin-left:5%;
 width:90%;
 margin-top: 2.5%;
 position: relative;
@@ -90,30 +91,32 @@ position: relative;
 `
 
 export const TextWrapper1 = styled.div`
+padding-left:5%;
 padding-top: 2.5%;
 height:40vh;
 float:left;
-width:40%;
+width:35%;
 position:relative;
 `
 
 export const TextWrapper2 = styled.div`
+padding-right:5%;
 display:table;
 padding-top: 2.5%;
 height:40vh;
 float:right;
-width: 60%;
+width: 55%;
 `
 export const ProjectText = styled.p`
 vertical-align: middle;
 display:table-cell;
-font-size: 1.2em;
+font-size: 1.1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 `
 
 export const ResourceText = styled.p`
-font-size: 1.2em;
+font-size: 1.1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 position: absolute;

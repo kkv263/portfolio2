@@ -3,6 +3,7 @@ import AboutContainer from './AboutContainer';
 import WelcomeContainer from './WelcomeContainer';
 import ProjectsContainer from './ProjectsContainer';
 import ContactContainer from './ContactContainer';
+import { Wrapper } from '../styles/Shared.style';
 class HomeContainer2 extends Component {
   constructor(props) {
     super(props);
@@ -22,33 +23,42 @@ class HomeContainer2 extends Component {
     // Pass through showPage as props => callback function 
     switch (this.state.showPage){
       case "about":
-        return (<AboutContainer 
+        return ( <Wrapper of="auto">
+        <AboutContainer 
         showHome ={() => this.showPage("home")}
         showProjects={() => this.showPage("projects")}
         showContact={() => this.showPage("contact")}
         >
-        </AboutContainer>);
+        </AboutContainer>
+        </Wrapper>
+        );
     
       case "home":
-        return (<WelcomeContainer showAbout={() => this.showPage("about")}
+        return (<Wrapper of="hidden">
+        <WelcomeContainer showAbout={() => this.showPage("about")}
         showProjects={() => this.showPage("projects")}
         showContact={() => this.showPage("contact")}
         >
-        </WelcomeContainer>);
+        </WelcomeContainer>
+        </Wrapper>);
 
       case "projects":
-        return (<ProjectsContainer showAbout={() => this.showPage("about")}
+        return (<Wrapper of="hidden">
+        <ProjectsContainer showAbout={() => this.showPage("about")}
         showHome ={() => this.showPage("home")}
         showContact={() => this.showPage("contact")}
         >
-        </ProjectsContainer>);
+        </ProjectsContainer>
+        </Wrapper>);
 
       case "contact":
-        return (<ContactContainer showAbout={() => this.showPage("about")}
+        return (<Wrapper of="hidden">
+        <ContactContainer showAbout={() => this.showPage("about")}
         showHome ={() => this.showPage("home")}
         showProjects={() => this.showPage("projects")}
         >
-      </ContactContainer>); 
+      </ContactContainer>
+      </Wrapper>); 
         
       default:
         break;

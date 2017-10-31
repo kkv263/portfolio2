@@ -14,6 +14,10 @@ color: inherit;
 		color: #EFCB68;
 	}
 }
+@media all and (max-width: 768px) {
+text-align:center;
+}
+
 `;
 
 export const Wrapper = styled.div`
@@ -22,39 +26,52 @@ background-color: #222823;
 width: 45%;
 height: 100vh;
 float:left;
+@media all and (max-width: 768px) {
+		width:100%;
+		text-align: center;
+
+	}
 `;
 
 export const TextWrapper = styled.div`
 padding-top:30px;
-padding-left:30px;
+margin-left: 30px;
 display: inline-block;
-vertical-align: middle;
+@media all and (max-width: 768px) {
+	margin-left: 0px;
+}
 `;
 
-export const Brand = styled.div`
-position:absolute;
-bottom:30px;
-font-family: 'Varela Round', sans-serif;
-font-size: 4em;
-color: #E1EFE6;
-padding-left:30px;
-transition: color ease .25s;
-text-decoration: none !important;
-  > div {
-		transition: background-color ease .25s;
-		display:inline-block;
-		width: 10px;
-		height: 10px;
-		background: #EAF2E3;
-		-moz-border-radius: 50px;
-		-webkit-border-radius: 50px;
-		border-radius: 50px;
-		
-	}
-&:hover > div {
-		background-color: #EFCB68;
-	}
+export const BrandWrapper = styled.div`
+margin-left:30px;
+border: 10px solid #E1EFE6;
+margin-top: 300px;
+width: 220px;
+height: 120px;
+transition: all ease .25s;
 &:hover {
-		color: #EFCB68;
+		border-color: #EFCB68;
+		> div {
+			color: #EFCB68;
+		}
+}
+> div {
+	transition: all ease .25s;
+}
+@media all and (max-width: 768px) {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+`
+
+export const Brand = styled.div`
+font-family: 'Varela Round', sans-serif;
+font-size: 3em;
+color: #E1EFE6;
+text-decoration: none !important;
+text-align: right;
+padding-right: 10px;
+@media all and (max-width: 768px) {
+text-align:center;
 }
 `

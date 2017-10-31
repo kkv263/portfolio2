@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Wrapper, FadeInWrapper} from '../styles/Shared.style'
+import { FadeInWrapper} from '../styles/Shared.style'
 import { Paragraph, Paragraph2, Quote } from '../styles/Contact.style';
 import NavigationBar from '../components/NavigationBar';
 class ContactContainer extends Component {
   render() {
     return (
-      <Wrapper>
+      <div>
         <NavigationBar showAbout={this.props.showAbout}
                        showHome ={this.props.showHome}
                        showProjects={this.props.showProjects}>
@@ -22,7 +22,7 @@ class ContactContainer extends Component {
           - Ayesha Siddiqi 
           </Quote>
         </FadeInWrapper>
-      </Wrapper>        
+      </div>        
     );
   }
 }

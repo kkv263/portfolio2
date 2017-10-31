@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavigationBar from '../components/NavigationBar';
-import { Wrapper, ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
+import { ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
 import { Star, StarWrapper, ProjectStar, SummaryWrapper, FadeInWrapper2, 
          Summary, TextWrapper1, TextWrapper2, ProjectText, ResourceText,
          FadeInWrapper3, FadeInWrapper4 } from '../styles/Projects.style';
@@ -75,7 +75,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper>
             <TextWrapper1>
               <ProjectText>Pegasus:</ProjectText>
-              <ProjectStar full src={require('../assets/pegasus.svg')} h="150px" w="150px" top="15%" left="10%"/>
+              <ProjectStar full src={require('../assets/pegasus.svg')} h="65%" w="65%" top="5%" left="10%"/>
               <ResourceText>
                  Tools: Android Studio, Java, XML<br /><br />
                  <a href="https://github.com/kkv263/MacroCalculator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -96,7 +96,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper2>
             <TextWrapper1>
             <ProjectText>Big Dipper:</ProjectText>
-            <ProjectStar full src={require('../assets/bigdipper.svg')} h="200px" w="200px" top="6%" left="7%"/>
+            <ProjectStar full src={require('../assets/bigdipper.svg')} h="85%" w="85%" top="0%" left="7%"/>
             <ResourceText>
                  Tools: Python, Reddit PRAW, Keepa API, Amazon API<br /><br />
                  <a href="https://github.com/kkv263/redditBots/tree/master/figuresBot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -117,7 +117,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper3>
             <TextWrapper1>
             <ProjectText>Leo:</ProjectText>
-            <ProjectStar full src={require('../assets/leo.svg')} h="150px" w="150px" top="10%" left="15%"/>
+            <ProjectStar full src={require('../assets/leo.svg')} h="75%" w="75%" top="0%" left="10%"/>
             <ResourceText>
                  Tools: React, ES6<br /><br />
                  <a href="https://github.com/kkv263/portfolio2" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -125,7 +125,7 @@ class ProjectsContainer extends Component {
             </TextWrapper1>
             <TextWrapper2>
               <ProjectText>
-                You're currently viewing my project!☺ My portfolio lets you take a sneak peak about me
+                My portfolio lets you take a sneak peak about me
                 and about what I do. The website utilizes beautiful and smooth animations followed with
                 a clean design with mobile support. Its purpose is to showcase me, my projects, my 
                 experience, and gives users a platform to contact me.
@@ -139,7 +139,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper4>
             <TextWrapper1>
             <ProjectText>Canis-Major:</ProjectText>
-            <ProjectStar full src={require('../assets/canismajor.svg')} h="125px" w="125px" top="10%" left="20%"/>
+            <ProjectStar full src={require('../assets/canismajor.svg')} h="60%" w="60%" top="0%" left="20%"/>
             <ResourceText>
                  Tools: React, Flask, SQLAlchemy, Bootstrap, Python <br /><br/>
                  <a href="https://github.com/savsmith/idb" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -160,7 +160,7 @@ class ProjectsContainer extends Component {
     }
 
     return (
-      <Wrapper>
+      <div>
         <NavigationBar showAbout={this.props.showAbout}
                        showHome ={this.props.showHome}
                        showContact={this.props.showContact}>
@@ -184,7 +184,7 @@ class ProjectsContainer extends Component {
             <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showContact}/>
           </ArrowWrapper>
         </FadeInWrapper>
-      </Wrapper>
+      </div>
 
     );
 

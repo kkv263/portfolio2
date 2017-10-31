@@ -20,19 +20,24 @@ background-color: #222823;
 width: 55%;
 height: 100vh;
 float: right;
-overflow:auto;
+overflow: ${props => props.of};
+@media all and (max-width: 768px) {
+		width:100%;
+	}
 `
 
 export const ArrowWrapper = styled.div`
 width: 100%;
-height: 10px;
 padding-bottom:${props=>props.pos};
 position:relative;
+@media all and (max-width: 768px) {
+  display:none;
+	}
 `
 
 export const DownArrow = styled.img`
 position:absolute;
-right:46%;
+right:43.5%;
 bottom:-10px;
 width:100px;
 height:100px;

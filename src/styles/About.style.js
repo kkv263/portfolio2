@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Image = styled.img`
-margin-top: 30px;
-margin-bottom: 30px;
-min-width: 80%;
+padding-top: 30px;
+width: 80%;
 height 50vh;
-margin-left: 10%;
+display: block;
+margin: 0 auto;
 `
-
 export const Paragraph = styled.p`
 margin-bottom: 30px;
 font-size: 1.2em;
@@ -16,6 +15,7 @@ font-family: 'Inconsolata', monospace;
 `
 
 export const TextWrapper = styled.div`
+margin-top: 5%;
 margin-left: 5%;
 margin-right: 5%;
 `
