@@ -155,6 +155,28 @@ class ProjectsContainer extends Component {
           </FadeInWrapper4>
           );
         break;
+        case "5":
+        projectRender = (
+          <FadeInWrapper4>
+            <TextWrapper1>
+            <ProjectText>Aries:</ProjectText>
+            <ProjectStar full src={require('../assets/aries.svg')} h="50%" w="50%" top="8%" left="25%"/>
+            <ResourceText>
+                 Tools: HackTX 2017 AWS, Node.js, React, MongoDB <br /><br/>
+                 <a href="https://github.com/kkv263/Smartflash" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </ResourceText>
+            </TextWrapper1>
+            <TextWrapper2>
+              <ProjectText>
+                Smartflash allows users to utilize flashcards audibly through Alexa-enabled devices. 
+                The Alexa skill prompts users to choose a language and prompts them with words or phrases 
+                to translate. Data from users is managed through Mongodb and is visualized 
+                on the accompanying web app written with React. The frontend is available.
+              </ProjectText>
+            </TextWrapper2>
+          </FadeInWrapper4>
+          );
+        break;
       default:
         break;
     }
@@ -176,6 +198,8 @@ class ProjectsContainer extends Component {
             top="50%" left="80%" h="100px" w="100px"/>
             <ProjectStar onClick={() => this.showProject("4")} src={require('../assets/canismajor.svg')}
             top="20%" left="60%" h="100px" w="100px"/> 
+            <ProjectStar onClick={() => this.showProject("5")} src={require('../assets/aries.svg')}
+            top="0%" left="30%" h="100px" w="100px"/> 
           </StarWrapper>
           <SummaryWrapper>
             {projectRender}
