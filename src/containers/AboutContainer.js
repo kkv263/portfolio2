@@ -16,7 +16,7 @@ class AboutContainer extends Component {
 
         </NavigationBar>
         <FadeInWrapper>
-        <Image src="https://dummyimage.com/600x400/6e6e6e/5e5e5e.png&text=PlaceHolder"></Image>
+        <Image src={require("../assets/kevin.jpg")}></Image>
         <TextWrapper>
         <Paragraph>
           TLDR; Kevin Vu is a aspiring web developer who is currently a student at the University of

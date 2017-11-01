@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Image = styled.img`
 padding-top: 30px;
 width: 80%;
-height 50vh;
 display: block;
 margin: 0 auto;
 @media all and (max-width: 415px) {
