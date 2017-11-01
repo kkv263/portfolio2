@@ -29,7 +29,6 @@ float:left;
 @media all and (max-width: 768px) {
 		width:100%;
 		text-align: center;
-
 	}
 `;
 

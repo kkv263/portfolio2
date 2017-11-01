@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Image, Paragraph, TextWrapper } from '../styles/About.style';
 import NavigationBar from '../components/NavigationBar';
-import {ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
+import {DownArrow, FadeInWrapper } from '../styles/Shared.style';
 class AboutContainer extends Component {
   
   render() {
@@ -49,10 +49,7 @@ class AboutContainer extends Component {
           me an email with anything you want!
         </Paragraph>
         </TextWrapper>
-        <ArrowWrapper pos="8%">
           <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showProjects}/>
-
-        </ArrowWrapper>
         </FadeInWrapper>
       </div>
 

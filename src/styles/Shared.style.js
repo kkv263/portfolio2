@@ -27,19 +27,9 @@ overflow: ${props => props.of};
 	}
 `
 
-export const ArrowWrapper = styled.div`
-width: 100%;
-padding-bottom:${props=>props.pos};
-position:relative;
-@media all and (max-width: 768px) {
-  display:none;
-	}
-`
-
 export const DownArrow = styled.img`
-position:absolute;
-right:43.5%;
-bottom:-10px;
+display:block;
+margin: 0 auto;
 width:100px;
 height:100px;
 animation: ${float} 2s ease-in-out infinite;

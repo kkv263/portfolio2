@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavigationBar from '../components/NavigationBar';
-import { ArrowWrapper, DownArrow, FadeInWrapper } from '../styles/Shared.style';
+import { DownArrow, FadeInWrapper } from '../styles/Shared.style';
 import { Star, StarWrapper, ProjectStar, SummaryWrapper, FadeInWrapper2, 
          Summary, TextWrapper1, TextWrapper2, ProjectText, ResourceText,
          FadeInWrapper3, FadeInWrapper4 } from '../styles/Projects.style';
@@ -204,9 +204,7 @@ class ProjectsContainer extends Component {
           <SummaryWrapper>
             {projectRender}
           </SummaryWrapper>
-          <ArrowWrapper pos="8%">
             <DownArrow src={require('../assets/chevron.svg')} onClick = {this.props.showContact}/>
-          </ArrowWrapper>
         </FadeInWrapper>
       </div>
 

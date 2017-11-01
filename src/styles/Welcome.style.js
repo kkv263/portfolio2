@@ -19,14 +19,3 @@ font-size: 2.5em;
 color: #EAF2E3;
 padding-top: 40px;
 `
-
-export const ArrowText = styled.p`
-font-size: 1.1em;
-color: #E1EFE6;
-opacity:0.3;
-font-family: 'Inconsolata', monospace;
-bottom:55px;
-right:47%;
-position:absolute;
-
-`

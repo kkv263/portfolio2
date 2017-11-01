@@ -93,9 +93,9 @@ position: relative;
 export const TextWrapper1 = styled.div`
 padding-left:5%;
 padding-top: 2.5%;
-height:40vh;
+height:35vh;
 float:left;
-width:35%;
+width:30%;
 position:relative;
 `
 
@@ -103,9 +103,9 @@ export const TextWrapper2 = styled.div`
 padding-right:5%;
 display:table;
 padding-top: 2.5%;
-height:40vh;
+height:35vh;
 float:right;
-width: 55%;
+width: 50%;
 `
 export const ProjectText = styled.p`
 vertical-align: middle;
