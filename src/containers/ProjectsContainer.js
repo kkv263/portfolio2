@@ -191,15 +191,15 @@ class ProjectsContainer extends Component {
           <StarWrapper>
             {stars}
             <ProjectStar onClick={() => this.showProject("3")} src={require('../assets/leo.svg')} 
-            top="20%" left="10%" h="100px" w="100px"/>
+            top="20%" left="10%" h="30%" w="30%"/>
             <ProjectStar onClick={() => this.showProject("2")} src={require('../assets/bigdipper.svg')} 
-            top="35%" left="30%" h="170px" w="170px"/>
+            top="60%" left="30%" h="30%" w="30%"/>
             <ProjectStar onClick={() => this.showProject("1")} src={require('../assets/pegasus.svg')}
-            top="50%" left="80%" h="100px" w="100px"/>
+            top="50%" left="80%" h="30%" w="30%"/>
             <ProjectStar onClick={() => this.showProject("4")} src={require('../assets/canismajor.svg')}
-            top="20%" left="60%" h="100px" w="100px"/> 
+            top="20%" left="60%" h="30%" w="30%"/> 
             <ProjectStar onClick={() => this.showProject("5")} src={require('../assets/aries.svg')}
-            top="0%" left="30%" h="100px" w="100px"/> 
+            top="0%" left="30%" h="30%" w="30%"/> 
           </StarWrapper>
           <SummaryWrapper>
             {projectRender}

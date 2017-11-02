@@ -113,6 +113,9 @@ display:table-cell;
 font-size: 1.1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
+@media all and (max-width: 376px) {
+font-size: .75em;
+}
 `
 
 export const ResourceText = styled.p`
@@ -122,12 +125,19 @@ font-family: 'Inconsolata', monospace;
 position: absolute;
 bottom: 0%;
 z-index:1;
+@media all and (max-width: 376px) {
+font-size: .75em;
+}
 
 > a {
+
   transition: color ease .25s;
   text-decoration: none !important;
   font-family: inherit;
   color: inherit;
+  @media all and (max-width: 376px) {
+  font-size: .75em;
+  }
     &:hover {
       color: #EFCB68;
     }
