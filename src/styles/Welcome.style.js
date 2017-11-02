@@ -18,4 +18,7 @@ font-family: 'Varela Round', sans-serif;
 font-size: 2.5em;
 color: #EAF2E3;
 padding-top: 40px;
+@media all and (max-width: 376px) {
+font-size: 1.5em;
+}
 `

@@ -40,4 +40,7 @@ transform: rotate(135deg);
   &:hover {
     opacity:1;
   }
+@media all and (max-width: 768px) {
+  display:none;
+}
 `
