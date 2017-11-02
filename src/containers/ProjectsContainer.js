@@ -125,7 +125,7 @@ class ProjectsContainer extends Component {
             </TextWrapper1>
             <TextWrapper2>
               <ProjectText>
-                My portfolio lets you take a sneak peak about me
+                My portfolio lets you take a sneak peek about me
                 and about what I do. The website utilizes beautiful and smooth animations followed with
                 a clean design with mobile support. Its purpose is to showcase me, my projects, my 
                 experience, and gives users a platform to contact me.

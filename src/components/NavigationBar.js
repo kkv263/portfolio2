@@ -10,6 +10,9 @@ padding-top:20px;
 text-align: right;
 width: 20px;
 cursor:pointer;
+@media all and (max-width: 376px) {
+  font-size: .6em;
+  }
 
 &:hover {
 		color: #EFCB68;
@@ -17,9 +20,10 @@ cursor:pointer;
 `
 
 const NavWrapper = styled.div`
-margin-right: 10%;
+margin-right: 15%;
+margin-left: 10%;
 display:flex;
-justify-content: space-around;
+justify-content: space-between;
 `
 
 class NavigationBar extends Component {
