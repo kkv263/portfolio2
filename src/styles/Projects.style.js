@@ -110,22 +110,22 @@ width: 50%;
 export const ProjectText = styled.p`
 vertical-align: middle;
 display:table-cell;
-font-size: 1.1em;
+font-size: 1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
-@media all and (max-width: 376px) {
+@media all and (max-width: 414px) {
 font-size: .75em;
 }
 `
 
 export const ResourceText = styled.p`
-font-size: 1.1em;
+font-size: 1em;
 color: #E1EFE6;
 font-family: 'Inconsolata', monospace;
 position: absolute;
 bottom: 0%;
 z-index:1;
-@media all and (max-width: 376px) {
+@media all and (max-width: 414px) {
 font-size: .75em;
 }
 
@@ -135,7 +135,7 @@ font-size: .75em;
   text-decoration: none !important;
   font-family: inherit;
   color: inherit;
-  @media all and (max-width: 376px) {
+  @media all and (max-width: 414px) {
   font-size: .75em;
   }
     &:hover {
