@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Paragraph } from '../styles/Welcome.style';
-import { DownArrow, ArrowWrapper } from '../styles/Shared.style'
+import { DownArrow } from '../styles/Shared.style'
 import NavigationBar from '../components/NavigationBar';
 class WelcomeContainer extends Component {
   render() {
