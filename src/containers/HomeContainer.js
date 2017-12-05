@@ -15,7 +15,7 @@ class HomeContainer extends Component {
         <Paragraph><a href="https://www.linkedin.com/in/kkv263/" target="_blank" rel="noopener noreferrer">LinkedIn</a></Paragraph> 
         <Paragraph><a href="https://github.com/kkv263" target="_blank" rel="noopener noreferrer">GitHub</a></Paragraph> 
         {/* <Paragraph><a href={require('../assets/resume.pdf')} target="_blank" rel="noopener noreferrer" download >Resume</a></Paragraph>  */}
-        <Paragraph><a href="https://www.dropbox.com/s/w4ir1hcdd8jzjhj/kevin_vu_resume2017.pdf?dl=0&m=" target="_blank" rel="noopener noreferrer">Resume</a></Paragraph> 
+        <Paragraph><a href="https://www.dropbox.com/s/w4ir1hcdd8jzjhj/kevin_vu_resume2017.pdf?dl=0" target="_blank" rel="noopener noreferrer">Resume</a></Paragraph> 
         <Paragraph><a href="https://www.behance.net/kkv263" target="_blank" rel="noopener noreferrer">Behance</a></Paragraph> 
         </TextWrapper>
         <BrandWrapper>

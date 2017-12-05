@@ -74,8 +74,8 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper>
             <TextWrapper1>
-              <ProjectText>Pegasus:</ProjectText>
-              <ProjectStar full src={require('../assets/pegasus.svg')} h="65%" w="65%" top="5%" left="10%"/>
+              <ProjectText>Pegasus: MacroCalculator</ProjectText>
+              <ProjectStar full src={require('../assets/pegasus.svg')} h="60%" w="60%" top="15%" left="20%"/>
               <ResourceText>
                  Tools: Android Studio, Java, XML<br /><br />
                  <a href="https://github.com/kkv263/MacroCalculator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -95,18 +95,17 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper2>
             <TextWrapper1>
-            <ProjectText>Big Dipper:</ProjectText>
+            <ProjectText>Big Dipper: Pintos</ProjectText>
             <ProjectStar full src={require('../assets/bigdipper.svg')} h="85%" w="85%" top="0%" left="7%"/>
             <ResourceText>
-                 Tools: Python, Reddit PRAW, Keepa API, Amazon API<br /><br />
-                 <a href="https://github.com/kkv263/redditBots/tree/master/figuresBot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                 Tools: C<br /><br />
               </ResourceText>
             </TextWrapper1>
             <TextWrapper2>
               <ProjectText>
-                figuresBot is a Reddit AI that filters through Reddit threads and user comments to 
-                capture Amazon links. The bot uses these links to query the Amazon product that was
-                listed and show a graph representing the price history of the product.
+                  Expanded a toy operating system in C to include priority scheduling, allowed argument 
+                  passing on the stack, implemented system calls for user programs, added and manipulated 
+                  virtual memory, and converted the existing single-thread file system into an multi-threaded file system.
               </ProjectText>
             </TextWrapper2>
           </FadeInWrapper2>
@@ -116,7 +115,7 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper3>
             <TextWrapper1>
-            <ProjectText>Leo:</ProjectText>
+            <ProjectText>Leo: Portfolio</ProjectText>
             <ProjectStar full src={require('../assets/leo.svg')} h="75%" w="75%" top="0%" left="10%"/>
             <ResourceText>
                  Tools: React, ES6<br /><br />
@@ -138,7 +137,7 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper4>
             <TextWrapper1>
-            <ProjectText>Canis-Major:</ProjectText>
+            <ProjectText>Canis-Major: BookIDB</ProjectText>
             <ProjectStar full src={require('../assets/canismajor.svg')} h="50%" w="50%" top="8%" left="25%"/>
             <ResourceText>
                  Tools: React, Flask, SQLAlchemy, Bootstrap, Python <br /><br/>
@@ -159,19 +158,18 @@ class ProjectsContainer extends Component {
         projectRender = (
           <FadeInWrapper4>
             <TextWrapper1>
-            <ProjectText>Aries:</ProjectText>
-            <ProjectStar full src={require('../assets/aries.svg')} h="50%" w="50%" top="8%" left="25%"/>
+            <ProjectText>Aries: JpnVerbs</ProjectText>
+            <ProjectStar full src={require('../assets/aries.svg')} h="30%" w="30%" top="10%" left="25%"/>
             <ResourceText>
-                 Tools: HackTX 2017 AWS, Node.js, React, MongoDB <br /><br/>
-                 <a href="https://github.com/kkv263/Smartflash" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                 Tools: Express, Node.js, React, MongoDB <br /><br/>
+                 <a href="https://github.com/kkv263/jpnverbs" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </ResourceText>
             </TextWrapper1>
             <TextWrapper2>
               <ProjectText>
-                Smartflash allows users to utilize flashcards audibly through Alexa-enabled devices. 
-                The Alexa skill prompts users to choose a language and prompts them with words or phrases 
-                to translate. Data from users is managed through Mongodb and is visualized 
-                on the accompanying web app written with React. The frontend is available.
+              An online database the conjugates Japanese verbs utilizing a MongoDB database to store verb records and conjugation forms. 
+              Node + Express serve the API and the web application online. The view layers are rendered in React to create a easy and 
+              readable user interface. 
               </ProjectText>
             </TextWrapper2>
           </FadeInWrapper4>
