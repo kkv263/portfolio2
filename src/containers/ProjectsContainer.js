@@ -159,7 +159,7 @@ class ProjectsContainer extends Component {
           <FadeInWrapper4>
             <TextWrapper1>
             <ProjectText>Aries: JpnVerbs</ProjectText>
-            <ProjectStar full src={require('../assets/aries.svg')} h="30%" w="30%" top="10%" left="25%"/>
+            <ProjectStar full src={require('../assets/aries.svg')} h="60%" w="60%" top="10%" left="25%"/>
             <ResourceText>
                  Tools: Express, Node.js, React, MongoDB <br /><br/>
                  <a href="https://github.com/kkv263/jpnverbs" target="_blank" rel="noopener noreferrer">View on GitHub</a>
